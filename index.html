@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var pic = new Array;
+        pic[0] = './img/01.png';
+        pic[1] = './img/02.png';
+        pic[2] = './img/03.png';
+        pic[3] = './img/04.png';
+        pic[4] = './img/05.png';
+        parseInt(Math.random() * (pic.length), 10);
+        var choose = Math.floor(Math.random() * (pic.length));
+        document.write('<img src="' + pic[choose] + ' ">');
+    </script>
+</body>
+
+</html>
